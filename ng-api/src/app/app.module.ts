@@ -5,8 +5,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NewsComponent } from './news/news.component';
-import { NewsService } from './news/news.service';
+import { NewsComponent } from './news/component/news.component';
+import { NewsService } from './news/service/news.service';
 
 
 @NgModule({
