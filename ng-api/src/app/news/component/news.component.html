@@ -3,12 +3,10 @@
 <table class="table table-dark">
     <tr>
         <th scope="col">Titulo</th>
-        <th scope="col">Autor</th>
         <th scope="col">Site</th>
     </tr>
     <tr *ngFor="let new of news">
-        <td>{{ new.title }} - {{ new.publishedAt | date:'dd/MM h:mm a' }}</td>
-        <td>{{ new.author }}</td>
+        <td>{{ new.title }} {{ new.author }} - {{ new.publishedAt | date:'dd/MM h:mm a' }}</td>
         <td><a href="{{ new.url }}"><small class="text-muted">Acessar</small></a></td>
     </tr>
 </table>
