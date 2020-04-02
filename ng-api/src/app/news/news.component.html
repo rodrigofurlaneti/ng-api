@@ -1,0 +1,13 @@
+<h1>Noticias BR</h1>
+<table>
+    <tr>
+        <th>Titulo</th>
+        <th>Autor</th>
+        <th>Site</th>
+    </tr>
+    <tr *ngFor="let new of news">
+        <td>{{ new.title }}</td>
+        <td>{{ new.author }}</td>
+        <td><a href="{{ new.url }}">Fonte</a></td>
+    </tr>
+</table>
