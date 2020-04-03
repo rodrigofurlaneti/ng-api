@@ -12,7 +12,7 @@ export class NewsComponent implements OnInit {
 
   constructor(private newsService: NewsService) { }
 
-  ngOnInit(){
+  ngOnInit() {
     this.listNews();
   }
 
